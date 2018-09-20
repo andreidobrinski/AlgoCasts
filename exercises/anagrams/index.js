@@ -9,6 +9,19 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(str) {
+  return str
+    .replace(/[^\w]/g, '')
+    .toLowerCase()
+    .split('')
+    .sort()
+    .join('');
+}
+
+function anagramsOne(stringA, stringB) {
   const aCharMap = buildCharMap(stringA);
   const bCharMap = buildCharMap(stringB);
 
@@ -25,7 +38,7 @@ function anagrams(stringA, stringB) {
   return true;
 }
 
-function buildCharMap(str) {
+function buildCharMapOne(str) {
   const charMap = {};
 
   for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
