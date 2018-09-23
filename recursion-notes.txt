@@ -1,0 +1,24 @@
+Write a function that console logs every number from 'n' to 0
+
+function printNumber(n, decrement = 1) {
+  if (n === 0) {
+    return;
+  }
+
+  console.log(n);
+  printNumber(n - decrement);
+}
+
+printNumber(10);
+
+---
+
+Recursion Tips
+- Figure out the bare minimum pieces of info to represent the problem
+-- Don't pass any info into the function that it doesn't need to 'do the work'
+- Give reasonable defaults to the bare minimum info
+- Check the base case.
+-- Is there any work left to do? If not, return
+-- Base case: the case where the recursion is done and doesn't need to do more work
+- After adding the logic, call the function again
+-- Make sure to change the arguments to the recursively called function
