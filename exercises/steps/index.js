@@ -17,7 +17,31 @@
 //       '### '
 //       '####'
 
-function steps(n) {
+function steps(n, row = 0, stair = '') {
+  // define the base case
+  if (n === row) {
+    return;
+  }
+
+  // define logic for end of a stair row
+  if (n === stair.length) {
+    console.log(stair);
+    return steps(n, row + 1);
+  }
+
+  if (stair.length <= row) {
+    stair += '#';
+  } else {
+    stair += ' ';
+  }
+
+  // or use a ternary
+  // const add = stair.length <= row ? '#' : ' ';
+
+  steps(n, row, stair);
+}
+
+function stepsOne(n) {
   for (let row = 0; row < n; row++) {
     let stair = '';
 
