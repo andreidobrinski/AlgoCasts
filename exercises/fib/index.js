@@ -18,6 +18,7 @@ function fib(n) {
 
 // recursive solution has exponential runtime complexity
 // exponential runtime is the least ideal for a solution
+// a better recursive solution would involve memoization
 
 function fibOne(n) {
   const result = [0, 1];
