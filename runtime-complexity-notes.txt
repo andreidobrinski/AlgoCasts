@@ -1,0 +1,77 @@
+Runtime Complexity
+- describes the performance of the algorithm
+- processing power involved if we change the inputs
+
+Linear Runtime
+- string reverse
+-- each additional character = 1 additional step through 1 loop
+- 1-to-1 relationship between inputs into the algorithm and amount of work required to process it
+
+Quadratic Runtime
+- steps
+-- each additional input (n) requires n-squared the amount of work
+- n-squared (N^2) relationship between inputs and processing power
+
+Runtimes
+Big 'O' Notation
+
+Constant
+1
+O(1)
+- no matter how many inputs we give, it always takes the same amount of work
+
+Logarithmic
+log(n)
+- doubling the inputs doesn't double the amount of work
+- searching operations are log(n)
+
+Linear
+n
+O(n)
+- iterating thru all elements in a collection of data
+- string lengths or array lengths
+
+Quasilinear
+n * log(n)
+- doubling the inputs doesn't double the amount of work
+- just above Linear
+- sorting operations are this
+
+Quadratic
+n^2
+O(n^2)
+- every element in a collection needs to be compared to every other element
+- each additional element needs to interact with every other element
+- handshake
+
+Exponential
+2^n
+- adding a single additional input means the processing power required doubles
+
+
+Identifying Runtime Complexity
+
+Simple loop thru a single collection?
+O(n)
+
+Iterating thru half a collection?
+still O(n)
+
+Two different collections with separate for loops?
+O(n + m)
+
+Two nested for loops for the same collection?
+O(n^2)
+
+Two nested for loops iterating over different collections?
+O(n * m)
+
+Sorting?
+O(n * log(n))
+
+Searching a sorted array?
+O(log(n))
+
+
+Space Complexity
+- how much more memory is required by doubling the inputs?
