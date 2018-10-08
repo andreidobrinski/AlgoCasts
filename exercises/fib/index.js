@@ -23,13 +23,13 @@ function memoize(fn) {
   };
 }
 
-const fib = memoize(slowfib);
+fib = memoize(fib);
 
 // recursive solution has exponential runtime complexity
 // exponential runtime is the least ideal for a solution
 // a better recursive solution would involve memoization
 
-function slowfib(n) {
+function fib(n) {
   if (n < 2) {
     return n;
   }
