@@ -16,6 +16,9 @@ function fib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
+// recursive solution has exponential runtime complexity
+// exponential runtime is the least ideal for a solution
+
 function fibOne(n) {
   const result = [0, 1];
 
