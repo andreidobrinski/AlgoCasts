@@ -1,0 +1,6 @@
+Data Structure
+
+- some way of organizing info or data with optimal runtime complexity for adding or removing records.
+
+- functionality of a JS array is a superset of what a queue does
+- queue: works in a FIFO manner
