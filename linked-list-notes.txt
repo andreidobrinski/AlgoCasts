@@ -1,0 +1,13 @@
+Linked List
+
+Ordered collection of data
+- collection of nodes containing some data, and a reference to the next node
+- aka chain (of nodes)
+- a connection to separate pieces of data (objects)
+- order of linked list doesn't change, unless you specify that it does
+- HEAD node = first node
+- TAIL node = last node
+
+Convention
+- the data property is called "data"
+- the reference to the next node is called "next"
