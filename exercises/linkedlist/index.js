@@ -159,8 +159,13 @@ class LinkedList {
     }
   }
 
-  forOf() {
+  *[Symbol.iterator]() {
+    let node = this.head;
 
+    while (node) {
+      yield node;
+      node = node.next;
+    }
   }
 }
 
