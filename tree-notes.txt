@@ -1,0 +1,9 @@
+Tree Traversal
+
+Breadth-First Traversal
+- horizontally, left to right
+- traversing all siblings and elements on the same level before going to children
+
+Depth-First Traversal
+- vertically, trying to get to the bottom of the tree as fast as possible
+- traversing any and all children of a node, before the siblings
