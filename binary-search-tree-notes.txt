@@ -5,6 +5,6 @@ Binary Tree
 
 Binary Search Tree
 - binary tree except
-- the first node is always smaller than the parent
-- the second node is always larger than the parent
+- the first node is always smaller than the parent (left node)
+- the second node is always larger than the parent (right node)
 - invalid bst: any first child node is not smaller and any second child node is not larger than the parent
