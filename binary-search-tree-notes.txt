@@ -1,0 +1,10 @@
+Binary Search Tree
+
+Binary Tree
+- a tree where each node has no more than 2 child nodes
+
+Binary Search Tree
+- binary tree except
+- the first node is always smaller than the parent
+- the second node is always larger than the parent
+- invalid bst: any first child node is not smaller and any second child node is not larger than the parent
