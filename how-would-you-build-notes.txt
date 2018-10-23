@@ -1,0 +1,14 @@
+How Would You Build (x)
+
+- Follow up question: ask what specific feature or area to focus on
+
+- Identify core features
+-- What data would you need to populate the screen?
+
+- Describe a possible implementation
+
+- Identify and discuss difficulties
+
+- Solutions for scaling
+-- Caching
+-- Deployment options
